@@ -30,7 +30,9 @@ check_dirs() {
 }
 
 function part_one {
-    echo "good delete"
+	check_dirs "$DIR1" "$DIR2" || handle_error "scada don't exist"
+	echo "let's start..."
+	echo "good delete"
 }
 
 function part_two {
